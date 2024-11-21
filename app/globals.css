@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+/* FullCalendarのフォントサイズ */
+.fc-event-title {
+  font-size: 10px;
+}
+
+/* 土曜の配色 */
+.fc .saturday-cell {
+  background-color: #e8f5fd; /* 土曜日のセルを淡い青に */
+}
+
+/* 日曜の配色 */
+.fc .sunday-cell {
+  background-color: #fcd8de; /* 日曜日のセルを淡いピンクに */
+}
+
+/* 祝日の配色 */
+.holiday-cell {
+  background-color: #fcd8de !important; /* 祝日のセルを淡いピンクに */
+}
